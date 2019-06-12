@@ -1,0 +1,16 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+development:
+  <<: *default
+  database: all_in_one
+  username: root
+  password: root
+ 
+
+production:
+  <<: *default
+  database: all_in_one
+  username: root
+  password: root
